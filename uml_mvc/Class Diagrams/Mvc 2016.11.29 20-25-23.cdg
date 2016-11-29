@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="Mvc">
+  <ClassDiagramComponents>
+    <Class name="Controller" package="mvc" visibility="public" xPosition="473.0" yPosition="405.0">
+      <Fields>
+        <Field name="model" type="Model" visibility="private"/>
+        <Field name="view" type="View" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="Model" name="model"/>
+          <Argument type="View" name="view"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getAlbumName" returnType="String" visibility="public"/>
+        <Method name="getArtistName" returnType="String" visibility="public"/>
+        <Method name="getSelectedGenre" returnType="String" visibility="public"/>
+        <Method name="setAlbumName" returnType="void" visibility="public">
+          <Argument type="String" name="name"/>
+        </Method>
+        <Method name="setArtistName" returnType="void" visibility="public">
+          <Argument type="String" name="name"/>
+        </Method>
+        <Method name="setSelectedGenre" returnType="void" visibility="public">
+          <Argument type="String" name="genre"/>
+        </Method>
+        <Method name="updateView" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Model" package="mvc" visibility="public" xPosition="166.0" yPosition="414.0">
+      <Fields>
+        <Field name="album" type="String" visibility="private"/>
+        <Field name="artist" type="String" visibility="private"/>
+        <Field name="genre" type="String" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="getAlbum" returnType="String" visibility="public"/>
+        <Method name="getArtist" returnType="String" visibility="public"/>
+        <Method name="getGenre" returnType="String" visibility="public"/>
+        <Method name="setAlbum" returnType="void" visibility="public">
+          <Argument type="String" name="album"/>
+        </Method>
+        <Method name="setArtist" returnType="void" visibility="public">
+          <Argument type="String" name="artist"/>
+        </Method>
+        <Method name="setGenre" returnType="void" visibility="public">
+          <Argument type="String" name="genre"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Mvc" package="mvc" visibility="public" xPosition="166.0" yPosition="296.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String[]" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="View" package="mvc" visibility="public" xPosition="403.0" yPosition="194.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="printMusicDetails" returnType="void" visibility="public">
+          <Argument type="String" name="album"/>
+          <Argument type="String" name="artist"/>
+          <Argument type="String" name="genre"/>
+        </Method>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <HasRelation name="model" source="mvc.Controller" target="mvc.Model" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="view" source="mvc.Controller" target="mvc.View" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+  </ClassDiagramRelations>
+</ClassDiagram>
