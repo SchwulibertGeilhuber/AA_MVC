@@ -20,6 +20,7 @@ public class Mvc
       Model model = new Model();      
       View view = new View();
       Controller controller = new Controller(model, view);
+      
 
       //Update the model data
       controller.setAlbumName("One");
