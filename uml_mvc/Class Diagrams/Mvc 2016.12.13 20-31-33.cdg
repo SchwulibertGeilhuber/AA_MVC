@@ -2,7 +2,7 @@
 
 <ClassDiagram name="Mvc">
   <ClassDiagramComponents>
-    <Class name="Controller" package="mvc" visibility="public" xPosition="473.0" yPosition="405.0">
+    <Class name="Controller" package="mvc" visibility="public" xPosition="285.0" yPosition="95.0">
       <Fields>
         <Field name="model" type="Model" visibility="private"/>
         <Field name="view" type="View" visibility="private"/>
@@ -29,7 +29,7 @@
         <Method name="updateView" returnType="void" visibility="public"/>
       </Methods>
     </Class>
-    <Class name="Model" package="mvc" visibility="public" xPosition="166.0" yPosition="414.0">
+    <Class name="Model" package="mvc" visibility="public" xPosition="682.0" yPosition="104.0">
       <Fields>
         <Field name="album" type="String" visibility="private"/>
         <Field name="artist" type="String" visibility="private"/>
@@ -51,7 +51,7 @@
         </Method>
       </Methods>
     </Class>
-    <Class name="Mvc" package="mvc" visibility="public" xPosition="166.0" yPosition="296.0">
+    <Class name="Mvc" package="mvc" visibility="public" xPosition="34.0" yPosition="95.0">
       <Fields/>
       <Constructors/>
       <Methods>
@@ -60,7 +60,7 @@
         </Method>
       </Methods>
     </Class>
-    <Class name="View" package="mvc" visibility="public" xPosition="403.0" yPosition="194.0">
+    <Class name="View" package="mvc" visibility="public" xPosition="215.0" yPosition="454.0">
       <Fields/>
       <Constructors/>
       <Methods>
